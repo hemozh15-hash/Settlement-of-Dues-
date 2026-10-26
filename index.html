@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>نموذج صرف مستحقات الموظفين - RAVIN HR</title>
+    <title>ظ†ظ…ظˆط°ط¬ طµط±ظپ ظ…ط³طھط­ظ‚ط§طھ ط§ظ„ظ…ظˆط¸ظپظٹظ† - RAVIN HR</title>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -118,7 +118,7 @@
 <div class="container">
     <div class="header">
         <div class="header-titles">
-            <h1>نموذج صرف مستحقات الموظفين</h1>
+            <h1>ظ†ظ…ظˆط°ط¬ طµط±ظپ ظ…ط³طھط­ظ‚ط§طھ ط§ظ„ظ…ظˆط¸ظپظٹظ†</h1>
             <p>BRANCH SETTLEMENT REQUEST</p>
         </div>
         <div class="header-center-brand">
@@ -129,110 +129,110 @@
             <div id="userBadgeHeader" style="display: none;" class="user-pill">
                 <i class="fa-solid fa-user-shield"></i> <span id="displayUserEmail"></span>
             </div>
-            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" title="تغيير المظهر">
+            <button class="theme-toggle" id="themeToggleBtn" onclick="toggleTheme()" title="طھط؛ظٹظٹط± ط§ظ„ظ…ط¸ظ‡ط±">
                 <i class="fa-solid fa-sun" id="themeIcon"></i>
             </button>
             <div class="brand-badge">
-                <span>★ IBRAHIM HASSAN ★</span>
+                <span>âک… IBRAHIM HASSAN âک…</span>
                 <strong>HR GENERALIST</strong>
             </div>
         </div>
     </div>
 
-    <!-- شاشة التحقق بالـ OTP -->
+    <!-- ط´ط§ط´ط© ط§ظ„طھط­ظ‚ظ‚ ط¨ط§ظ„ظ€ OTP -->
     <div class="auth-card" id="authCard">
         <i class="fa-solid fa-envelope-circle-check"></i>
-        <h2>تحقق أمان الفرع (OTP Security)</h2>
-        <p>اختر فرعك من القائمة أدناه لتلقي رمز التحقق على بريدك الإلكتروني:</p>
+        <h2>طھط­ظ‚ظ‚ ط£ظ…ط§ظ† ط§ظ„ظپط±ط¹ (OTP Security)</h2>
+        <p>ط§ط®طھط± ظپط±ط¹ظƒ ظ…ظ† ط§ظ„ظ‚ط§ط¦ظ…ط© ط£ط¯ظ†ط§ظ‡ ظ„طھظ„ظ‚ظٹ ط±ظ…ط² ط§ظ„طھط­ظ‚ظ‚ ط¹ظ„ظ‰ ط¨ط±ظٹط¯ظƒ ط§ظ„ط¥ظ„ظƒطھط±ظˆظ†ظٹ:</p>
         
         <div class="form-select-group">
-            <label>اختر الفرع التابع له:</label>
+            <label>ط§ط®طھط± ط§ظ„ظپط±ط¹ ط§ظ„طھط§ط¨ط¹ ظ„ظ‡:</label>
             <select id="authStoreSelect" class="form-control">
-                <option value="">-- حدد فرعك --</option>
+                <option value="">-- ط­ط¯ط¯ ظپط±ط¹ظƒ --</option>
             </select>
         </div>
 
         <button class="btn-primary" id="sendOtpBtn" onclick="requestOtp()" style="width: 100%; justify-content: center; margin-bottom: 15px;">
-            إرسال رمز التحقق (OTP) <i class="fa-solid fa-paper-plane"></i>
+            ط¥ط±ط³ط§ظ„ ط±ظ…ط² ط§ظ„طھط­ظ‚ظ‚ (OTP) <i class="fa-solid fa-paper-plane"></i>
         </button>
 
         <div id="otpInputBox" style="display: none; margin-top: 20px; border-top: 1px solid var(--border-color); padding-top: 20px;">
             <div class="otp-notice">
-                <i class="fa-solid fa-circle-info"></i> يرجى الدخول إلى بريد الأوتلوك الخاص بك لوصول الرقم، ثم أدخله أدناه:
+                <i class="fa-solid fa-circle-info"></i> ظٹط±ط¬ظ‰ ط§ظ„ط¯ط®ظˆظ„ ط¥ظ„ظ‰ ط¨ط±ظٹط¯ ط§ظ„ط£ظˆطھظ„ظˆظƒ ط§ظ„ط®ط§طµ ط¨ظƒ ظ„ظˆطµظˆظ„ ط§ظ„ط±ظ‚ظ…طŒ ط«ظ… ط£ط¯ط®ظ„ظ‡ ط£ط¯ظ†ط§ظ‡:
             </div>
             <div class="form-select-group">
-                <label>أدخل رمز التحقق (6 أرقام):</label>
+                <label>ط£ط¯ط®ظ„ ط±ظ…ط² ط§ظ„طھط­ظ‚ظ‚ (6 ط£ط±ظ‚ط§ظ…):</label>
                 <input type="text" id="otpCodeInput" class="form-control" placeholder="123456" maxlength="6" style="text-align: center; letter-spacing: 5px; font-weight: 700; font-size: 18px;">
             </div>
             <button class="btn-primary" onclick="verifyOtp()" style="width: 100%; justify-content: center; background: #00c853; color: #fff;">
-                تأكيد الكود والدخول <i class="fa-solid fa-check-double"></i>
+                طھط£ظƒظٹط¯ ط§ظ„ظƒظˆط¯ ظˆط§ظ„ط¯ط®ظˆظ„ <i class="fa-solid fa-check-double"></i>
             </button>
         </div>
     </div>
 
-    <!-- النظام الأساسي -->
+    <!-- ط§ظ„ظ†ط¸ط§ظ… ط§ظ„ط£ط³ط§ط³ظٹ -->
     <div id="mainSystemContainer" style="display: none;">
         <div class="timer-banner" id="timerBanner">
             <div class="schedule-info">
-                <div><i class="fa-solid fa-calendar-check" style="color:var(--accent-orange);"></i> الفتح: <span id="openingDisplay">--</span></div>
-                <div><i class="fa-solid fa-calendar-xmark" style="color:var(--accent-orange);"></i> الإغلاق: <span id="closingDisplay">--</span></div>
+                <div><i class="fa-solid fa-calendar-check" style="color:var(--accent-orange);"></i> ط§ظ„ظپطھط­: <span id="openingDisplay">--</span></div>
+                <div><i class="fa-solid fa-calendar-xmark" style="color:var(--accent-orange);"></i> ط§ظ„ط¥ط؛ظ„ط§ظ‚: <span id="closingDisplay">--</span></div>
             </div>
-            <div class="countdown-clock" id="countdownClock">النظام متاح للعمل</div>
+            <div class="countdown-clock" id="countdownClock">ط§ظ„ظ†ط¸ط§ظ… ظ…طھط§ط­ ظ„ظ„ط¹ظ…ظ„</div>
         </div>
 
         <div id="portalMainContent">
             <div class="steps-bar">
-                <div class="step-item active" id="indicator-1"><div class="step-num">01</div><span>اختيار الفرع</span></div>
-                <div class="step-item" id="indicator-2"><div class="step-num">02</div><span>قائمة الموظفين</span></div>
-                <div class="step-item" id="indicator-3"><div class="step-num">03</div><span>تأكيد الصرف</span></div>
+                <div class="step-item active" id="indicator-1"><div class="step-num">01</div><span>ط§ط®طھظٹط§ط± ط§ظ„ظپط±ط¹</span></div>
+                <div class="step-item" id="indicator-2"><div class="step-num">02</div><span>ظ‚ط§ط¦ظ…ط© ط§ظ„ظ…ظˆط¸ظپظٹظ†</span></div>
+                <div class="step-item" id="indicator-3"><div class="step-num">03</div><span>طھط£ظƒظٹط¯ ط§ظ„طµط±ظپ</span></div>
             </div>
 
             <!-- Step 1 -->
             <div class="card" id="step-1-content">
-                <div class="section-title"><i class="fa-solid fa-store"></i> حدد الفرع المطلوب أو اختر الكل</div>
+                <div class="section-title"><i class="fa-solid fa-store"></i> ط­ط¯ط¯ ط§ظ„ظپط±ط¹ ط§ظ„ظ…ط·ظ„ظˆط¨ ط£ظˆ ط§ط®طھط± ط§ظ„ظƒظ„</div>
                 <div class="controls-top">
-                    <button class="btn-select-all" id="selectAllBtn" onclick="toggleSelectAll()"><i class="fa-solid fa-check-double"></i> تحديد كل الفروع</button>
-                    <span id="selectedCountText" style="color: var(--text-muted); font-size: 13px; font-weight: 600;">تم اختيار: 0 فرع</span>
+                    <button class="btn-select-all" id="selectAllBtn" onclick="toggleSelectAll()"><i class="fa-solid fa-check-double"></i> طھط­ط¯ظٹط¯ ظƒظ„ ط§ظ„ظپط±ظˆط¹</button>
+                    <span id="selectedCountText" style="color: var(--text-muted); font-size: 13px; font-weight: 600;">طھظ… ط§ط®طھظٹط§ط±: 0 ظپط±ط¹</span>
                 </div>
                 <div class="stores-grid" id="storesGrid"></div>
                 <div class="actions-footer" style="justify-content: flex-end;">
-                    <button class="btn-primary" onclick="fetchEmployeesAndProceed()">التالي: عرض الموظفين <i class="fa-solid fa-arrow-left"></i></button>
+                    <button class="btn-primary" onclick="fetchEmployeesAndProceed()">ط§ظ„طھط§ظ„ظٹ: ط¹ط±ط¶ ط§ظ„ظ…ظˆط¸ظپظٹظ† <i class="fa-solid fa-arrow-left"></i></button>
                 </div>
             </div>
 
             <!-- Step 2 -->
             <div class="card" id="step-2-content" style="display: none;">
-                <div class="section-title"><i class="fa-solid fa-users"></i> قائمة الموظفين المستحقة لهم مستحقات</div>
+                <div class="section-title"><i class="fa-solid fa-users"></i> ظ‚ط§ط¦ظ…ط© ط§ظ„ظ…ظˆط¸ظپظٹظ† ط§ظ„ظ…ط³طھط­ظ‚ط© ظ„ظ‡ظ… ظ…ط³طھط­ظ‚ط§طھ</div>
                 
                 <div style="margin-bottom: 15px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 10px;">
-                    <span style="font-size: 13px; color: var(--text-muted);"><i class="fa-solid fa-filter" style="color:var(--accent-orange);"></i> يمكنك استخدام سهم الفلتر 🔽 في عرايس الجدول لتصفية البيانات فوراً مثل الإكسيل.</span>
-                    <button class="btn-select-all" onclick="resetTableFilters()" style="padding: 6px 12px; font-size: 12px;"><i class="fa-solid fa-rotate-left"></i> إلغاء كل الفلاتر</button>
+                    <span style="font-size: 13px; color: var(--text-muted);"><i class="fa-solid fa-filter" style="color:var(--accent-orange);"></i> ظٹظ…ظƒظ†ظƒ ط§ط³طھط®ط¯ط§ظ… ط³ظ‡ظ… ط§ظ„ظپظ„طھط± ًں”½ ظپظٹ ط¹ط±ط§ظٹط³ ط§ظ„ط¬ط¯ظˆظ„ ظ„طھطµظپظٹط© ط§ظ„ط¨ظٹط§ظ†ط§طھ ظپظˆط±ط§ظ‹ ظ…ط«ظ„ ط§ظ„ط¥ظƒط³ظٹظ„.</span>
+                    <button class="btn-select-all" onclick="resetTableFilters()" style="padding: 6px 12px; font-size: 12px;"><i class="fa-solid fa-rotate-left"></i> ط¥ظ„ط؛ط§ط، ظƒظ„ ط§ظ„ظپظ„ط§طھط±</button>
                 </div>
 
                 <div class="table-responsive">
                     <table>
                         <thead>
                             <tr>
-                                <th style="width: 50px;"><i class="fa-solid fa-square-check"></i> اختيار</th>
+                                <th style="width: 50px;"><i class="fa-solid fa-square-check"></i> ط§ط®طھظٹط§ط±</th>
                                 <th>
-                                    <i class="fa-solid fa-shop"></i> الفرع
+                                    <i class="fa-solid fa-shop"></i> ط§ظ„ظپط±ط¹
                                     <select id="filterStore" class="excel-filter-select" onchange="applyExcelFilters()">
-                                        <option value="">-- الكل --</option>
+                                        <option value="">-- ط§ظ„ظƒظ„ --</option>
                                     </select>
                                 </th>
-                                <th><i class="fa-solid fa-id-badge"></i> الكود</th>
-                                <th><i class="fa-solid fa-user"></i> الاسم</th>
+                                <th><i class="fa-solid fa-id-badge"></i> ط§ظ„ظƒظˆط¯</th>
+                                <th><i class="fa-solid fa-user"></i> ط§ظ„ط§ط³ظ…</th>
                                 <th>
-                                    <i class="fa-solid fa-briefcase"></i> الوظيفة
+                                    <i class="fa-solid fa-briefcase"></i> ط§ظ„ظˆط¸ظٹظپط©
                                     <select id="filterJob" class="excel-filter-select" onchange="applyExcelFilters()">
-                                        <option value="">-- الكل --</option>
+                                        <option value="">-- ط§ظ„ظƒظ„ --</option>
                                     </select>
                                 </th>
-                                <th><i class="fa-solid fa-wallet"></i> المبلغ المحجوز</th>
+                                <th><i class="fa-solid fa-wallet"></i> ط§ظ„ظ…ط¨ظ„ط؛ ط§ظ„ظ…ط­ط¬ظˆط²</th>
                                 <th>
-                                    <i class="fa-solid fa-circle-info"></i> الحالة
+                                    <i class="fa-solid fa-circle-info"></i> ط§ظ„ط­ط§ظ„ط©
                                     <select id="filterStatus" class="excel-filter-select" onchange="applyExcelFilters()">
-                                        <option value="">-- الكل --</option>
+                                        <option value="">-- ط§ظ„ظƒظ„ --</option>
                                     </select>
                                 </th>
                             </tr>
@@ -241,8 +241,8 @@
                     </table>
                 </div>
                 <div class="actions-footer">
-                    <button class="btn-select-all" onclick="goBackToStep1()"><i class="fa-solid fa-arrow-right"></i> رجوع</button>
-                    <button class="btn-primary" onclick="submitSelectedEmployees()">تأكيد الطلب وإرسال الإشعار <i class="fa-solid fa-check"></i></button>
+                    <button class="btn-select-all" onclick="goBackToStep1()"><i class="fa-solid fa-arrow-right"></i> ط±ط¬ظˆط¹</button>
+                    <button class="btn-primary" onclick="submitSelectedEmployees()">طھط£ظƒظٹط¯ ط§ظ„ط·ظ„ط¨ ظˆط¥ط±ط³ط§ظ„ ط§ظ„ط¥ط´ط¹ط§ط± <i class="fa-solid fa-check"></i></button>
                 </div>
             </div>
 
@@ -250,8 +250,8 @@
             <div class="card" id="step-3-content" style="display: none;">
                 <div class="alert-box" style="background: var(--card-bg); border: 2px solid var(--accent-orange); border-radius: 12px; padding: 35px 25px; text-align: center;">
                     <i class="fa-solid fa-circle-check" style="font-size: 45px; color: var(--accent-orange); margin-bottom: 15px;"></i>
-                    <div style="font-size: 18px; font-weight: 700; margin-bottom: 10px;">تم إرسال طلب صرف المستحقات بنجاح</div>
-                    <div style="font-size: 15px; color: var(--text-muted); margin-bottom: 20px;">سوف يتم المراجعة من الموارد البشرية على أن يتم نزول مستحقات الموظفين مع راتب الشهر الحالي</div>
+                    <div style="font-size: 18px; font-weight: 700; margin-bottom: 10px;">طھظ… ط¥ط±ط³ط§ظ„ ط·ظ„ط¨ طµط±ظپ ط§ظ„ظ…ط³طھط­ظ‚ط§طھ ط¨ظ†ط¬ط§ط­</div>
+                    <div style="font-size: 15px; color: var(--text-muted); margin-bottom: 20px;">ط³ظˆظپ ظٹطھظ… ط§ظ„ظ…ط±ط§ط¬ط¹ط© ظ…ظ† ط§ظ„ظ…ظˆط§ط±ط¯ ط§ظ„ط¨ط´ط±ظٹط© ط¹ظ„ظ‰ ط£ظ† ظٹطھظ… ظ†ط²ظˆظ„ ظ…ط³طھط­ظ‚ط§طھ ط§ظ„ظ…ظˆط¸ظپظٹظ† ظ…ط¹ ط±ط§طھط¨ ط§ظ„ط´ظ‡ط± ط§ظ„ط­ط§ظ„ظٹ</div>
                     <div style="font-size: 14px; font-weight: 700; color: var(--accent-orange); margin-bottom: 15px;">THANK YOU</div>
                     <div style="display: inline-block; border-top: 1px dashed var(--accent-orange); border-bottom: 1px dashed var(--accent-orange); padding: 8px 25px;">
                         <h4 style="font-size: 14px;">HR - IBRAHIM HASSAN</h4>
@@ -259,15 +259,15 @@
                     </div>
                 </div>
                 <div class="actions-footer" style="justify-content: center; margin-top: 30px;">
-                    <button class="btn-primary" onclick="resetForm()">إجراء طلب جديد <i class="fa-solid fa-rotate-right"></i></button>
+                    <button class="btn-primary" onclick="resetForm()">ط¥ط¬ط±ط§ط، ط·ظ„ط¨ ط¬ط¯ظٹط¯ <i class="fa-solid fa-rotate-right"></i></button>
                 </div>
             </div>
         </div>
 
         <div class="closed-overlay" id="linkClosedScreen" style="display: none;">
             <i class="fa-solid fa-lock"></i>
-            <h2>عذراً، نظام التسجيل مغلق حالياً</h2>
-            <p>يرجى مراجعة مواعيد الشفت المحددة من لوحة التحكم (الداشبورد).</p>
+            <h2>ط¹ط°ط±ط§ظ‹طŒ ظ†ط¸ط§ظ… ط§ظ„طھط³ط¬ظٹظ„ ظ…ط؛ظ„ظ‚ ط­ط§ظ„ظٹط§ظ‹</h2>
+            <p>ظٹط±ط¬ظ‰ ظ…ط±ط§ط¬ط¹ط© ظ…ظˆط§ط¹ظٹط¯ ط§ظ„ط´ظپطھ ط§ظ„ظ…ط­ط¯ط¯ط© ظ…ظ† ظ„ظˆط­ط© ط§ظ„طھط­ظƒظ… (ط§ظ„ط¯ط§ط´ط¨ظˆط±ط¯).</p>
         </div>
     </div>
 </div>
@@ -304,7 +304,7 @@
 
         const select = document.getElementById('authStoreSelect');
         if(select) {
-            select.innerHTML = '<option value="">-- حدد فرعك --</option>';
+            select.innerHTML = '<option value="">-- ط­ط¯ط¯ ظپط±ط¹ظƒ --</option>';
             storesList.forEach(s => {
                 let opt = document.createElement('option');
                 opt.value = s;
@@ -346,10 +346,10 @@
                 let closeTime = new Date(savedClose).getTime();
 
                 if (now < openTime) {
-                    document.getElementById('countdownClock').innerText = "لم يبدأ موعد فتح اللينك بعد";
+                    document.getElementById('countdownClock').innerText = "ظ„ظ… ظٹط¨ط¯ط£ ظ…ظˆط¹ط¯ ظپطھط­ ط§ظ„ظ„ظٹظ†ظƒ ط¨ط¹ط¯";
                     applyScreenState(true);
                 } else if (now > closeTime) {
-                    document.getElementById('countdownClock').innerText = "انتهت فترة التسجيل";
+                    document.getElementById('countdownClock').innerText = "ط§ظ†طھظ‡طھ ظپطھط±ط© ط§ظ„طھط³ط¬ظٹظ„";
                     applyScreenState(true);
                 } else {
                     applyScreenState(false);
@@ -357,12 +357,12 @@
                     let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
                     let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
                     let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-                    document.getElementById('countdownClock').innerText = `متبقي على الإغلاق: ${hours}س : ${minutes}د : ${seconds}ث`;
+                    document.getElementById('countdownClock').innerText = `ظ…طھط¨ظ‚ظٹ ط¹ظ„ظ‰ ط§ظ„ط¥ط؛ظ„ط§ظ‚: ${hours}ط³ : ${minutes}ط¯ : ${seconds}ط«`;
                 }
             }, 1000);
         } else {
-            document.getElementById('openingDisplay').innerText = "متاح حالياً";
-            document.getElementById('closingDisplay').innerText = "مفتوح";
+            document.getElementById('openingDisplay').innerText = "ظ…طھط§ط­ ط­ط§ظ„ظٹط§ظ‹";
+            document.getElementById('closingDisplay').innerText = "ظ…ظپطھظˆط­";
             applyScreenState(false);
         }
         buildStoresGrid();
@@ -377,19 +377,19 @@
     async function requestOtp() {
         const store = document.getElementById('authStoreSelect').value;
         if(!store) {
-            alert('برجاء اختيار الفرع أولاً.');
+            alert('ط¨ط±ط¬ط§ط، ط§ط®طھظٹط§ط± ط§ظ„ظپط±ط¹ ط£ظˆظ„ط§ظ‹.');
             return;
         }
 
         let targetEmail = emailsMap[store];
         if(!targetEmail) {
-            alert('عذراً، البريد الإلكتروني لهذا الفرع غير مسجل.');
+            alert('ط¹ط°ط±ط§ظ‹طŒ ط§ظ„ط¨ط±ظٹط¯ ط§ظ„ط¥ظ„ظƒطھط±ظˆظ†ظٹ ظ„ظ‡ط°ط§ ط§ظ„ظپط±ط¹ ط؛ظٹط± ظ…ط³ط¬ظ„.');
             return;
         }
 
         selectedStoreForAuth = store;
         const btn = document.getElementById('sendOtpBtn');
-        btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> جاري إرسال الرمز لـ Outlook...`;
+        btn.innerHTML = `<i class="fa-solid fa-spinner fa-spin"></i> ط¬ط§ط±ظٹ ط¥ط±ط³ط§ظ„ ط§ظ„ط±ظ…ط² ظ„ظ€ Outlook...`;
         btn.disabled = true;
 
         try {
@@ -399,17 +399,17 @@
             if(data.status === "success") {
                 correctOtpGenerated = data.generatedOtp;
                 verifiedUserEmail = targetEmail;
-                alert(`تم إرسال رمز التحقق بنجاح إلى: ${targetEmail}`);
+                alert(`طھظ… ط¥ط±ط³ط§ظ„ ط±ظ…ط² ط§ظ„طھط­ظ‚ظ‚ ط¨ظ†ط¬ط§ط­ ط¥ظ„ظ‰: ${targetEmail}`);
                 document.getElementById('otpInputBox').style.display = 'block';
                 btn.style.display = 'none';
             } else {
-                alert('فشل الإرسال: ' + data.message);
-                btn.innerHTML = `إرسال رمز التحقق (OTP) <i class="fa-solid fa-paper-plane"></i>`;
+                alert('ظپط´ظ„ ط§ظ„ط¥ط±ط³ط§ظ„: ' + data.message);
+                btn.innerHTML = `ط¥ط±ط³ط§ظ„ ط±ظ…ط² ط§ظ„طھط­ظ‚ظ‚ (OTP) <i class="fa-solid fa-paper-plane"></i>`;
                 btn.disabled = false;
             }
         } catch(err) {
-            alert('خطأ في الاتصال بالسيرفر.');
-            btn.innerHTML = `إرسال رمز التحقق (OTP) <i class="fa-solid fa-paper-plane"></i>`;
+            alert('ط®ط·ط£ ظپظٹ ط§ظ„ط§طھطµط§ظ„ ط¨ط§ظ„ط³ظٹط±ظپط±.');
+            btn.innerHTML = `ط¥ط±ط³ط§ظ„ ط±ظ…ط² ط§ظ„طھط­ظ‚ظ‚ (OTP) <i class="fa-solid fa-paper-plane"></i>`;
             btn.disabled = false;
         }
     }
@@ -425,7 +425,7 @@
             document.getElementById('mainSystemContainer').style.display = 'block';
             checkLocalStorageTimes();
         } else {
-            alert('رمز التحقق غير صحيح، برجاء المحاولة مرة أخرى.');
+            alert('ط±ظ…ط² ط§ظ„طھط­ظ‚ظ‚ ط؛ظٹط± طµط­ظٹط­طŒ ط¨ط±ط¬ط§ط، ط§ظ„ظ…ط­ط§ظˆظ„ط© ظ…ط±ط© ط£ط®ط±ظ‰.');
         }
     }
 
@@ -447,7 +447,7 @@
                     selectedStores.push(store);
                     card.classList.add('selected');
                 }
-                document.getElementById('selectedCountText').innerText = `تم اختيار: ${selectedStores.length} فرع`;
+                document.getElementById('selectedCountText').innerText = `طھظ… ط§ط®طھظٹط§ط±: ${selectedStores.length} ظپط±ط¹`;
             };
             storesGrid.appendChild(card);
         });
@@ -462,17 +462,17 @@
             selectedStores = [...storesList];
             cards.forEach(c => c.classList.add('selected'));
         }
-        document.getElementById('selectedCountText').innerText = `تم اختيار: ${selectedStores.length} فرع`;
+        document.getElementById('selectedCountText').innerText = `طھظ… ط§ط®طھظٹط§ط±: ${selectedStores.length} ظپط±ط¹`;
     }
 
     async function fetchEmployeesAndProceed() {
         if (selectedStores.length === 0) {
-            alert('برجاء اختيار فرع واحد على الأقل.');
+            alert('ط¨ط±ط¬ط§ط، ط§ط®طھظٹط§ط± ظپط±ط¹ ظˆط§ط­ط¯ ط¹ظ„ظ‰ ط§ظ„ط£ظ‚ظ„.');
             return;
         }
 
         const tbody = document.getElementById('employeesTableBody');
-        tbody.innerHTML = `<tr><td colspan="7" style="text-align: center;"><i class="fa-solid fa-bolt fa-spin" style="color:var(--accent-orange);"></i> ⚡ جاري جلب البيانات بأقصى سرعة...</td></tr>`;
+        tbody.innerHTML = `<tr><td colspan="7" style="text-align: center;"><i class="fa-solid fa-bolt fa-spin" style="color:var(--accent-orange);"></i> âڑ، ط¬ط§ط±ظٹ ط¬ظ„ط¨ ط§ظ„ط¨ظٹط§ظ†ط§طھ ط¨ط£ظ‚طµظ‰ ط³ط±ط¹ط©...</td></tr>`;
 
         document.getElementById('step-1-content').style.display = 'none';
         document.getElementById('step-2-content').style.display = 'block';
@@ -494,7 +494,7 @@
             populateExcelFilters(currentEmployeesData);
             renderEmployeesTable(currentEmployeesData);
         } catch (err) {
-            tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: red;">خطأ في الاتصال بقاعدة البيانات.</td></tr>`;
+            tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: red;">ط®ط·ط£ ظپظٹ ط§ظ„ط§طھطµط§ظ„ ط¨ظ‚ط§ط¹ط¯ط© ط§ظ„ط¨ظٹط§ظ†ط§طھ.</td></tr>`;
         }
     }
 
@@ -511,7 +511,7 @@
     function fillSelectOptions(elementId, arr) {
         let select = document.getElementById(elementId);
         let currentVal = select.value;
-        select.innerHTML = '<option value="">-- الكل --</option>';
+        select.innerHTML = '<option value="">-- ط§ظ„ظƒظ„ --</option>';
         arr.forEach(val => {
             if(val) {
                 let opt = document.createElement('option');
@@ -549,7 +549,7 @@
         const tbody = document.getElementById('employeesTableBody');
         tbody.innerHTML = '';
         if (dataList.length === 0) {
-            tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-muted);">لا توجد بيانات مطابقة لفلتر البحث.</td></tr>`;
+            tbody.innerHTML = `<tr><td colspan="7" style="text-align: center; color: var(--text-muted);">ظ„ط§ طھظˆط¬ط¯ ط¨ظٹط§ظ†ط§طھ ظ…ط·ط§ط¨ظ‚ط© ظ„ظپظ„طھط± ط§ظ„ط¨ط­ط«.</td></tr>`;
             return;
         }
 
@@ -561,7 +561,7 @@
                 <td>${emp.code}</td>
                 <td>${emp.name}</td>
                 <td>${emp.job}</td>
-                <td>${emp.amount} ج.م</td>
+                <td>${emp.amount} ط¬.ظ…</td>
                 <td><span style="color: var(--accent-orange); font-weight: 700;">${emp.status}</span></td>
             `;
             tbody.appendChild(tr);
@@ -578,7 +578,7 @@
     async function submitSelectedEmployees() {
         const checked = document.querySelectorAll('.emp-checkbox:checked');
         if (checked.length === 0) {
-            alert('برجاء اختيار موظف واحد على الأقل.');
+            alert('ط¨ط±ط¬ط§ط، ط§ط®طھظٹط§ط± ظ…ظˆط¸ظپ ظˆط§ط­ط¯ ط¹ظ„ظ‰ ط§ظ„ط£ظ‚ظ„.');
             return;
         }
 
@@ -606,10 +606,10 @@
                 document.getElementById('indicator-2').classList.remove('active');
                 document.getElementById('indicator-3').classList.add('active');
             } else {
-                alert('حدث خطأ أثناء الحفظ: ' + result.message);
+                alert('ط­ط¯ط« ط®ط·ط£ ط£ط«ظ†ط§ط، ط§ظ„ط­ظپط¸: ' + result.message);
             }
         } catch (err) {
-            alert('خطأ في إرسال الطلب للسيرفر.');
+            alert('ط®ط·ط£ ظپظٹ ط¥ط±ط³ط§ظ„ ط§ظ„ط·ظ„ط¨ ظ„ظ„ط³ظٹط±ظپط±.');
         }
     }
 
@@ -620,7 +620,7 @@
         document.getElementById('step-1-content').style.display = 'block';
         document.getElementById('indicator-3').classList.remove('active');
         document.getElementById('indicator-1').classList.add('active');
-        document.getElementById('selectedCountText').innerText = `تم اختيار: 0 فرع`;
+        document.getElementById('selectedCountText').innerText = `طھظ… ط§ط®طھظٹط§ط±: 0 ظپط±ط¹`;
     }
 </script>
 
